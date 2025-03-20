@@ -2,212 +2,181 @@
 // Header компонент с навигацией и выпадающими меню
 ---
 
-<header class="bg-white shadow-md sticky top-0 z-50">
-  <div class="container mx-auto px-4">
-    <div class="flex justify-between items-center py-4">
-      <!-- Логотип и название -->
-      <div class="flex items-center">
-        <a href="/" class="font-bold text-xl text-indigo-700">АСТРА</a>
-      </div>
+<header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center h-16">
+        <a href="/" class="font-bold text-indigo-600 py-2">
+          Центр гигиены и экспертизы
+        </a>
 
-      <!-- Мобильная кнопка меню -->
-      <div class="md:hidden">
-        <button 
-          type="button" 
-          x-data="{}" 
-          @click="$store.mobileMenu.toggle()"
-          class="text-gray-700 hover:text-indigo-600 focus:outline-none"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-      </div>
+        <div class="md:hidden">
+          <button 
+            type="button" 
+            x-data="{}" 
+            @click="$store.mobileMenu.toggle()"
+            class="text-gray-700 hover:text-indigo-600 focus:outline-none"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
 
-      <!-- Навигационное меню (десктоп) -->
-      <nav 
-        class="hidden md:flex items-center space-x-6" 
-        x-data="{}"
-      >
-        <!-- Главная -->
-        <a href="/" class="text-gray-700 hover:text-indigo-600 py-2">Главная</a>
+        <!-- Навигационное меню (десктоп) -->
+        <nav class="hidden md:flex items-center justify-center gap-4 flex-1">
+          
+
+          <!-- Главная -->
+          <a href="/" class="text-neutral-700 hover:text-indigo-600 py-2">Главная</a>
         
-        <!-- Лицензии (выпадающее меню) -->
-        <div x-data="{ open: false }" @click.away="open = false" class="relative">
-          <button 
-            @click="open = !open" 
-            class="text-gray-700 hover:text-indigo-600 py-2 flex items-center"
-          >
-            Лицензии
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="opacity-0 translate-y-1"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-transition:leave="transition ease-in duration-150"
-            x-transition:leave-start="opacity-100 translate-y-0"
-            x-transition:leave-end="opacity-0 translate-y-1"
-            class="absolute z-10 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1"
-            style="display: none;"
-          >
-            <a href="/licenses" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Лицензия</a>
-            <a href="/san-epid" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Сан-Эпид заключение</a>
-            <a href="/certificates" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Сертификаты</a>
+          <!-- Насекомые (выпадающее меню) -->
+          <div x-data="{ open: false }" @click.away="open = false" class="relative">
+            <button 
+              @click="open = !open" 
+              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+            >
+              Насекомые
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div 
+              x-show="open" 
+              x-transition:enter="transition ease-out duration-200"
+              x-transition:enter-start="opacity-0 translate-y-1"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-150"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-1"
+              class="absolute z-10 left-0 mt-2 w-48 rounded shadow-lg bg-white ring-1 ring-black/5 py-1"
+              style="display: none;"
+            >
+              <a href="/insects/bedbugs" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Клопы</a>
+              <a href="/insects/cockroaches" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Тараканы</a>
+              <a href="/insects/fleas" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Блохи</a>
+              <a href="/insects/ants" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Муравьи</a>
+              <a href="/insects/ticks" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Клещи</a>
+              <a href="/insects/mosquitoes" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Комары</a>
+              <a href="/insects/prices" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Цены</a>
+            </div>
           </div>
-        </div>
 
-        <!-- Насекомые (выпадающее меню) -->
-        <div x-data="{ open: false }" @click.away="open = false" class="relative">
-          <button 
-            @click="open = !open" 
-            class="text-gray-700 hover:text-indigo-600 py-2 flex items-center"
-          >
-            Насекомые
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="opacity-0 translate-y-1"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-transition:leave="transition ease-in duration-150"
-            x-transition:leave-start="opacity-100 translate-y-0"
-            x-transition:leave-end="opacity-0 translate-y-1"
-            class="absolute z-10 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1"
-            style="display: none;"
-          >
-            <a href="/insects/bedbugs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Клопы</a>
-            <a href="/insects/cockroaches" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Тараканы</a>
-            <a href="/insects/fleas" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Блохи</a>
-            <a href="/insects/ants" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Муравьи</a>
-            <a href="/insects/ticks" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Клещи</a>
-            <a href="/insects/mosquitoes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Комары</a>
-            <a href="/insects/prices" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Цены</a>
+          <!-- Грызуны (выпадающее меню) -->
+          <div x-data="{ open: false }" @click.away="open = false" class="relative">
+            <button 
+              @click="open = !open" 
+              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+            >
+              Грызуны
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div 
+              x-show="open" 
+              x-transition:enter="transition ease-out duration-200"
+              x-transition:enter-start="opacity-0 translate-y-1"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-150"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-1"
+              class="absolute z-10 left-0 mt-2 w-48 rounded shadow-lg bg-white ring-1 ring-black/5 py-1"
+              style="display: none;"
+            >
+              <a href="/rodents/rats" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Крысы</a>
+              <a href="/rodents/mice" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Мыши</a>
+              <a href="/rodents/prices" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Цены</a>
+            </div>
           </div>
-        </div>
 
-        <!-- Грызуны (выпадающее меню) -->
-        <div x-data="{ open: false }" @click.away="open = false" class="relative">
-          <button 
-            @click="open = !open" 
-            class="text-gray-700 hover:text-indigo-600 py-2 flex items-center"
-          >
-            Грызуны
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="opacity-0 translate-y-1"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-transition:leave="transition ease-in duration-150"
-            x-transition:leave-start="opacity-100 translate-y-0"
-            x-transition:leave-end="opacity-0 translate-y-1"
-            class="absolute z-10 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1"
-            style="display: none;"
-          >
-            <a href="/rodents/rats" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Крысы</a>
-            <a href="/rodents/mice" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Мыши</a>
-            <a href="/rodents/prices" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Цены</a>
+          <!-- Дезинфекция (выпадающее меню) -->
+          <div x-data="{ open: false }" @click.away="open = false" class="relative">
+            <button 
+              @click="open = !open" 
+              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+            >
+              Дезинфекция
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div 
+              x-show="open" 
+              x-transition:enter="transition ease-out duration-200"
+              x-transition:enter-start="opacity-0 translate-y-1"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-150"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-1"
+              class="absolute z-10 left-0 mt-2 w-48 rounded shadow-lg bg-white ring-1 ring-black/5 py-1"
+              style="display: none;"
+            >
+              <a href="/disinfection/premises" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Дезинфекция помещений</a>
+              <a href="/disinfection/prices" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Цены</a>
+            </div>
           </div>
-        </div>
 
-        <!-- Дезинфекция (выпадающее меню) -->
-        <div x-data="{ open: false }" @click.away="open = false" class="relative">
-          <button 
-            @click="open = !open" 
-            class="text-gray-700 hover:text-indigo-600 py-2 flex items-center"
-          >
-            Дезинфекция
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="opacity-0 translate-y-1"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-transition:leave="transition ease-in duration-150"
-            x-transition:leave-start="opacity-100 translate-y-0"
-            x-transition:leave-end="opacity-0 translate-y-1"
-            class="absolute z-10 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1"
-            style="display: none;"
-          >
-            <a href="/disinfection/premises" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Дезинфекция помещений</a>
-            <a href="/disinfection/prices" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Цены</a>
+          <!-- Препараты (выпадающее меню) -->
+          <div x-data="{ open: false }" @click.away="open = false" class="relative">
+            <button 
+              @click="open = !open" 
+              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+            >
+              Препараты
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div 
+              x-show="open" 
+              x-transition:enter="transition ease-out duration-200"
+              x-transition:enter-start="opacity-0 translate-y-1"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-150"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-1"
+              class="absolute z-10 left-0 mt-2 w-48 rounded shadow-lg bg-white ring-1 ring-black/5 py-1"
+              style="display: none;"
+            >
+              <a href="/products/agran" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Средство от насекомых "АГРАН"</a>
+              <a href="/products/cypermethrin" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Циперметрин 25</a>
+              <a href="/products/rodent-control" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Средства от грызунов</a>
+            </div>
           </div>
-        </div>
 
-        <!-- Препараты (выпадающее меню) -->
-        <div x-data="{ open: false }" @click.away="open = false" class="relative">
-          <button 
-            @click="open = !open" 
-            class="text-gray-700 hover:text-indigo-600 py-2 flex items-center"
-          >
-            Препараты
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="opacity-0 translate-y-1"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-transition:leave="transition ease-in duration-150"
-            x-transition:leave-start="opacity-100 translate-y-0"
-            x-transition:leave-end="opacity-0 translate-y-1"
-            class="absolute z-10 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1"
-            style="display: none;"
-          >
-            <a href="/products/agran" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Средство от насекомых "АГРАН"</a>
-            <a href="/products/cypermethrin" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Циперметрин 25</a>
-            <a href="/products/rodent-control" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Средства от грызунов</a>
+          <!-- Цены -->
+          <a href="/prices" class="text-neutral-700 hover:text-indigo-600 py-2">Цены</a>
+          
+          <!-- Обратная связь (выпадающее меню) -->
+          <div x-data="{ open: false }" @click.away="open = false" class="relative">
+            <button 
+              @click="open = !open" 
+              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+            >
+              Обратная связь
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div 
+              x-show="open" 
+              x-transition:enter="transition ease-out duration-200"
+              x-transition:enter-start="opacity-0 translate-y-1"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-150"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-1"
+              class="absolute z-10 right-0 mt-2 w-48 rounded shadow-lg bg-white ring-1 ring-black/5 py-1"
+              style="display: none;"
+            >
+              <a href="/contacts" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Контакты</a>
+              <a href="/callback" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Заказать звонок</a>
+            </div>
           </div>
-        </div>
-
-        <!-- Цены -->
-        <a href="/prices" class="text-gray-700 hover:text-indigo-600 py-2">Цены</a>
-        
-        <!-- Обратная связь (выпадающее меню) -->
-        <div x-data="{ open: false }" @click.away="open = false" class="relative">
-          <button 
-            @click="open = !open" 
-            class="text-gray-700 hover:text-indigo-600 py-2 flex items-center"
-          >
-            Обратная связь
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="opacity-0 translate-y-1"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-transition:leave="transition ease-in duration-150"
-            x-transition:leave-start="opacity-100 translate-y-0"
-            x-transition:leave-end="opacity-0 translate-y-1"
-            class="absolute z-10 right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1"
-            style="display: none;"
-          >
-            <a href="/contacts" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Контакты</a>
-            <a href="/callback" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Заказать звонок</a>
-          </div>
-        </div>
-        
-        <!-- Заявка онлайн (кнопка) -->
-        <a href="/order" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-md">Заявка онлайн</a>
-      </nav>
+          
+          <!-- Заявка онлайн (кнопка) -->
+          <a href="/order" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded">Заявка онлайн</a>
+        </nav>
     </div>
   </div>
 
@@ -216,102 +185,102 @@
     x-data="{}" 
     x-show="$store.mobileMenu.isOpen" 
     x-transition:enter="transition ease-out duration-200"
-    x-transition:enter-start="opacity-0 transform -translate-y-2"
-    x-transition:enter-end="opacity-100 transform translate-y-0"
+    x-transition:enter-start="opacity-0 -translate-y-2"
+    x-transition:enter-end="opacity-100 translate-y-0"
     x-transition:leave="transition ease-in duration-150"
-    x-transition:leave-start="opacity-100 transform translate-y-0"
-    x-transition:leave-end="opacity-0 transform -translate-y-2"
+    x-transition:leave-start="opacity-100 translate-y-0"
+    x-transition:leave-end="opacity-0 -translate-y-2"
     class="md:hidden bg-white shadow-lg"
     style="display: none;"
   >
     <nav class="px-4 py-2 space-y-1">
-      <a href="/" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">Главная</a>
+      <a href="/" class="block py-2 px-4 text-neutral-700 hover:bg-neutral-100 rounded">Главная</a>
       
       <div x-data="{ open: false }" class="border-b pb-1">
-        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-neutral-700 hover:bg-neutral-100 rounded">
           <span>Лицензии</span>
           <svg x-bind:class="{'rotate-180': open}" class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
         <div x-show="open" x-collapse class="pl-8">
-          <a href="/licenses" class="block py-2 text-sm text-gray-700">Лицензия</a>
-          <a href="/san-epid" class="block py-2 text-sm text-gray-700">Сан-Эпид заключение</a>
-          <a href="/certificates" class="block py-2 text-sm text-gray-700">Сертификаты</a>
+          <a href="/licenses" class="block py-2 text-sm text-neutral-700">Лицензия</a>
+          <a href="/san-epid" class="block py-2 text-sm text-neutral-700">Сан-Эпид заключение</a>
+          <a href="/certificates" class="block py-2 text-sm text-neutral-700">Сертификаты</a>
         </div>
       </div>
 
       <div x-data="{ open: false }" class="border-b pb-1">
-        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-neutral-700 hover:bg-neutral-100 rounded">
           <span>Насекомые</span>
           <svg x-bind:class="{'rotate-180': open}" class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
         <div x-show="open" x-collapse class="pl-8">
-          <a href="/insects/bedbugs" class="block py-2 text-sm text-gray-700">Клопы</a>
-          <a href="/insects/cockroaches" class="block py-2 text-sm text-gray-700">Тараканы</a>
-          <a href="/insects/fleas" class="block py-2 text-sm text-gray-700">Блохи</a>
-          <a href="/insects/ants" class="block py-2 text-sm text-gray-700">Муравьи</a>
-          <a href="/insects/ticks" class="block py-2 text-sm text-gray-700">Клещи</a>
-          <a href="/insects/mosquitoes" class="block py-2 text-sm text-gray-700">Комары</a>
-          <a href="/insects/prices" class="block py-2 text-sm text-gray-700">Цены</a>
+          <a href="/insects/bedbugs" class="block py-2 text-sm text-neutral-700">Клопы</a>
+          <a href="/insects/cockroaches" class="block py-2 text-sm text-neutral-700">Тараканы</a>
+          <a href="/insects/fleas" class="block py-2 text-sm text-neutral-700">Блохи</a>
+          <a href="/insects/ants" class="block py-2 text-sm text-neutral-700">Муравьи</a>
+          <a href="/insects/ticks" class="block py-2 text-sm text-neutral-700">Клещи</a>
+          <a href="/insects/mosquitoes" class="block py-2 text-sm text-neutral-700">Комары</a>
+          <a href="/insects/prices" class="block py-2 text-sm text-neutral-700">Цены</a>
         </div>
       </div>
 
       <div x-data="{ open: false }" class="border-b pb-1">
-        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-neutral-700 hover:bg-neutral-100 rounded">
           <span>Грызуны</span>
           <svg x-bind:class="{'rotate-180': open}" class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
         <div x-show="open" x-collapse class="pl-8">
-          <a href="/rodents/rats" class="block py-2 text-sm text-gray-700">Крысы</a>
-          <a href="/rodents/mice" class="block py-2 text-sm text-gray-700">Мыши</a>
-          <a href="/rodents/prices" class="block py-2 text-sm text-gray-700">Цены</a>
+          <a href="/rodents/rats" class="block py-2 text-sm text-neutral-700">Крысы</a>
+          <a href="/rodents/mice" class="block py-2 text-sm text-neutral-700">Мыши</a>
+          <a href="/rodents/prices" class="block py-2 text-sm text-neutral-700">Цены</a>
         </div>
       </div>
 
       <div x-data="{ open: false }" class="border-b pb-1">
-        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-neutral-700 hover:bg-neutral-100 rounded">
           <span>Дезинфекция</span>
           <svg x-bind:class="{'rotate-180': open}" class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
         <div x-show="open" x-collapse class="pl-8">
-          <a href="/disinfection/premises" class="block py-2 text-sm text-gray-700">Дезинфекция помещений</a>
-          <a href="/disinfection/prices" class="block py-2 text-sm text-gray-700">Цены</a>
+          <a href="/disinfection/premises" class="block py-2 text-sm text-neutral-700">Дезинфекция помещений</a>
+          <a href="/disinfection/prices" class="block py-2 text-sm text-neutral-700">Цены</a>
         </div>
       </div>
 
       <div x-data="{ open: false }" class="border-b pb-1">
-        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-neutral-700 hover:bg-neutral-100 rounded">
           <span>Препараты</span>
           <svg x-bind:class="{'rotate-180': open}" class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
         <div x-show="open" x-collapse class="pl-8">
-          <a href="/products/agran" class="block py-2 text-sm text-gray-700">Средство от насекомых "АГРАН"</a>
-          <a href="/products/cypermethrin" class="block py-2 text-sm text-gray-700">Циперметрин 25</a>
-          <a href="/products/rodent-control" class="block py-2 text-sm text-gray-700">Средства от грызунов</a>
+          <a href="/products/agran" class="block py-2 text-sm text-neutral-700">Средство от насекомых "АГРАН"</a>
+          <a href="/products/cypermethrin" class="block py-2 text-sm text-neutral-700">Циперметрин 25</a>
+          <a href="/products/rodent-control" class="block py-2 text-sm text-neutral-700">Средства от грызунов</a>
         </div>
       </div>
 
-      <a href="/prices" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded border-b pb-1">Цены</a>
+      <a href="/prices" class="block py-2 px-4 text-neutral-700 hover:bg-neutral-100 rounded border-b pb-1">Цены</a>
 
       <div x-data="{ open: false }" class="border-b pb-1">
-        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+        <button @click="open = !open" class="flex items-center justify-between w-full py-2 px-4 text-neutral-700 hover:bg-neutral-100 rounded">
           <span>Обратная связь</span>
           <svg x-bind:class="{'rotate-180': open}" class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
         <div x-show="open" x-collapse class="pl-8">
-          <a href="/contacts" class="block py-2 text-sm text-gray-700">Контакты</a>
-          <a href="/callback" class="block py-2 text-sm text-gray-700">Заказать звонок</a>
+          <a href="/contacts" class="block py-2 text-sm text-neutral-700">Контакты</a>
+          <a href="/callback" class="block py-2 text-sm text-neutral-700">Заказать звонок</a>
         </div>
       </div>
 

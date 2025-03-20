@@ -1,0 +1,562 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// Можно добавить изображения клопов
+// import bedbugImage from '../../images/bedbug.jpg';
+---
+
+<Layout title="Уничтожение постельных клопов в Новосибирске | Центр гигиены и экспертизы">
+  <!-- Hero Section с основной информацией -->
+  <section class="bg-indigo-600 text-white py-16">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-3/5">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            УНИЧТОЖЕНИЕ ПОСТЕЛЬНЫХ КЛОПОВ В НОВОСИБИРСКЕ
+          </h1>
+          <p class="text-xl mb-6">Профессиональная дезинсекция с гарантией до 2 лет</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="tel:+73832000082" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              +7 (383) 200-00-82
+            </a>
+            <a href="#prices" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">Узнать цены</a>
+          </div>
+        </div>
+        <div class="md:w-2/5 mt-8 md:mt-0">
+          <!-- Здесь можно добавить изображение или иконку -->
+          <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+            <div class="text-center">
+              <div class="inline-block p-3 bg-white/20 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Экстренная помощь</h3>
+              <p class="opacity-80">Выезд специалиста через 60 минут в любой район Новосибирска</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Почему клопы опасны -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Почему клопы опасны?</h2>
+      <p class="text-neutral-600 text-lg mb-8 max-w-4xl mx-auto">
+        Постельные клопы — не просто бытовые вредители. Они создают серьезные риски для здоровья и комфорта:
+      </p>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="bg-red-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Укусы вызывают зуд, аллергию и бессонницу</h3>
+          <p class="text-neutral-600">У 70% людей укусы провоцируют кожные реакции, у 15% — тяжелые аллергические реакции.</p>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="bg-red-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Переносят инфекции</h3>
+          <p class="text-neutral-600">Исследования выявили на теле клопов возбудителей гепатита B, туберкулеза и других заболеваний.</p>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="bg-red-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Быстро размножаются</h3>
+          <p class="text-neutral-600">Самка откладывает до 500 яиц за жизнь. Колония из 10 особей за 3 месяца превращается в 1000+ паразитов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 5 признаков, что у вас завелись клопы -->
+  <section class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">5 признаков, что у вас завелись клопы</h2>
+      
+      <div class="space-y-6 max-w-4xl mx-auto">
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-indigo-600">1</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Красные зудящие укусы в виде «дорожек»</h3>
+            <p class="text-neutral-600">Чаще всего появляются на спине, шее и руках — в местах, которые открыты во время сна.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-indigo-600">2</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Коричневые пятна на постели</h3>
+            <p class="text-neutral-600">Следы экскрементов клопов обычно заметны на светлых поверхностях постельного белья.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-indigo-600">3</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Хитиновые оболочки</h3>
+            <p class="text-neutral-600">Часто обнаруживаются в швах матрасов, за плинтусами и в щелях мебели.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-indigo-600">4</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Характерный запах</h3>
+            <p class="text-neutral-600">Сладковатый, напоминающий миндаль — особенно заметен в замкнутых пространствах или при большой колонии.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-indigo-600">5</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Кровяные точки на простынях</h3>
+            <p class="text-neutral-600">Появляются от раздавленных насекомых во время сна.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Почему DIY-методы не работают -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-8 text-center">Почему DIY-методы не работают?</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-100 p-3 rounded-full flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Бытовые аэрозоли малоэффективны</h3>
+              <p class="text-neutral-600">Убивают только взрослых особей, но не яйца, которые продолжают развиваться.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-100 p-3 rounded-full flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Народные средства неэффективны</h3>
+              <p class="text-neutral-600">Уксус, травы, эфирные масла лишь отпугивают клопов на 1-2 дня, не уничтожая колонию.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-100 p-3 rounded-full flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Термообработка требует специального оборудования</h3>
+              <p class="text-neutral-600">Для уничтожения клопов нужен нагрев до +60°C во всех зонах одновременно — в быту это невозможно.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="bg-orange-100 p-3 rounded-full flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Пример из практики</h3>
+              <p class="text-neutral-600">После самостоятельной обработки клиента 90% клопов погибли, но через 2 недели популяция полностью восстановилась из яиц. Уничтожить всех вредителей удалось только после профессиональной дезинсекции.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Как мы работаем -->
+  <section class="py-16 bg-indigo-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Как мы работаем</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-14 h-14 flex items-center justify-center rounded-full mb-4">
+            <span class="text-2xl font-bold text-indigo-600">1</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Бесплатный выезд эксперта</h3>
+          <ul class="space-y-2 text-neutral-600">
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Анализ степени заражения</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Составление карты гнезд с помощью тепловизора</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-14 h-14 flex items-center justify-center rounded-full mb-4">
+            <span class="text-2xl font-bold text-indigo-600">2</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">3 метода обработки на выбор</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b">
+                  <th class="text-left pb-2">Метод</th>
+                  <th class="text-left pb-2">Эффективность</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b">
+                  <td class="py-2 pr-4">
+                    <span class="font-medium">Холодный туман</span>
+                    <p class="text-xs text-neutral-500">Проникновение в щели, безопасно для мебели</p>
+                  </td>
+                  <td class="py-2">98%</td>
+                </tr>
+                <tr class="border-b">
+                  <td class="py-2 pr-4">
+                    <span class="font-medium">Горячий туман (+50°C)</span>
+                    <p class="text-xs text-neutral-500">Уничтожение яиц, профилактика на 6 месяцев</p>
+                  </td>
+                  <td class="py-2">99.9%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4">
+                    <span class="font-medium">Барьерная защита</span>
+                    <p class="text-xs text-neutral-500">Защита от повторного проникновения 12 месяцев</p>
+                  </td>
+                  <td class="py-2">100%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-14 h-14 flex items-center justify-center rounded-full mb-4">
+            <span class="text-2xl font-bold text-indigo-600">3</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Используем препараты 4 поколения</h3>
+          <ul class="space-y-2 text-neutral-600">
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Не оставляют пятен</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Безопасны для детей и животных (сертификат ECOLAB)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Одобрены Роспотребнадзором (№ РУ.77.99.88.002.Е.004282.06.21)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Цены на услуги -->
+  <section id="prices" class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Цены на услуги</h2>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full text-left">
+          <thead>
+            <tr class="bg-indigo-50">
+              <th class="py-4 px-6 font-semibold">Площадь</th>
+              <th class="py-4 px-6 font-semibold">Стоимость</th>
+              <th class="py-4 px-6 font-semibold">Включено</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y">
+            <tr class="hover:bg-neutral-50">
+              <td class="py-4 px-6">Комната в общежитии</td>
+              <td class="py-4 px-6 font-semibold">1 200 ₽</td>
+              <td class="py-4 px-6">Обработка холодным туманом + гарантия 6 мес</td>
+            </tr>
+            <tr class="hover:bg-neutral-50">
+              <td class="py-4 px-6">1-комнатная квартира</td>
+              <td class="py-4 px-6 font-semibold">1 400 ₽</td>
+              <td class="py-4 px-6">Горячий туман + барьерная защита</td>
+            </tr>
+            <tr class="hover:bg-neutral-50">
+              <td class="py-4 px-6">2-комнатная квартира</td>
+              <td class="py-4 px-6 font-semibold">1 800 ₽</td>
+              <td class="py-4 px-6">Комплексная обработка + 2 выезда</td>
+            </tr>
+            <tr class="hover:bg-neutral-50">
+              <td class="py-4 px-6">3-комнатная квартира</td>
+              <td class="py-4 px-6 font-semibold">2 200 ₽</td>
+              <td class="py-4 px-6">VIP-пакет: дезинсекция + санитарная очистка</td>
+            </tr>
+            <tr class="hover:bg-neutral-50">
+              <td class="py-4 px-6">Коттеджи, таунхаусы</td>
+              <td class="py-4 px-6 font-semibold">Договорная</td>
+              <td class="py-4 px-6">Индивидуальный расчет + пожизненная гарантия</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Акция -->
+      <div class="mt-8 bg-yellow-50 border border-yellow-200 p-6 rounded-lg">
+        <div class="flex items-center gap-4">
+          <div class="bg-yellow-100 p-3 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Акция: При заказе до 15:00 — скидка 20% на обработку горячим туманом!</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Наши гарантии -->
+  <section class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Наши гарантии</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">12 месяцев гарантии</h3>
+          <p class="text-neutral-600">Полное отсутствие клопов на протяжении всего срока гарантии.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Бесплатный повторный выезд</h3>
+          <p class="text-neutral-600">В течение 6 месяцев при малейших признаках насекомых.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 8h6m-5 0a3 3 0 110 6H9l3 3m-3-6h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Финансовая ответственность</h3>
+          <p class="text-neutral-600">Вернем 200% стоимости, если проблема не решена.</p>
+        </div>
+      </div>
+      
+      <!-- Пример гарантии -->
+      <div class="bg-white p-6 rounded-lg shadow-sm max-w-3xl mx-auto">
+        <div class="flex items-start gap-4">
+          <div class="bg-indigo-100 p-3 rounded-full flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Пример гарантии:</h3>
+            <p class="text-neutral-600">В 2023 году из 1 257 обработок повторные вызовы потребовались только в 2 случаях из-за ремонта у клиентов после дезинсекции.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 3 шага для заказа -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">3 шага для заказа</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div class="bg-neutral-50 p-6 rounded-lg text-center">
+          <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-white">1</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Звонок</h3>
+          <p class="text-neutral-600 mb-4">Позвоните по номеру <a href="tel:+73832000082" class="text-indigo-600 font-semibold">+7 (383) 200-00-82</a> — оператор задаст 3 вопроса:</p>
+          <ul class="text-left space-y-2">
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Тип помещения</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Примерная площадь</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Предпочтительное время обработки</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg text-center">
+          <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-white">2</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Выезд дезинфектора</h3>
+          <div class="flex flex-col items-center gap-4 mb-4">
+            <div class="bg-indigo-100 p-3 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p class="font-semibold">Через 60 минут</p>
+          </div>
+          <p class="text-neutral-600">В Новосибирске или в удобное для вас время по предварительной записи.</p>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg text-center">
+          <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-white">3</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Оплата по факту</h3>
+          <div class="flex flex-col items-center gap-4 mb-4">
+            <div class="bg-indigo-100 p-3 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p class="font-semibold">После проверки результата</p>
+          </div>
+          <p class="text-neutral-600">Вы оплачиваете услугу только после выполненной работы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Почему нас выбирают -->
+  <section class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Почему нас выбирают?</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Лицензия Минздрава</h3>
+          <p class="text-neutral-600">№ ЛО-54-01 0033387 на медицинскую деятельность.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">15 лет опыта</h3>
+          <p class="text-neutral-600">Обработано более 18 000 объектов различной сложности.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Анонимность</h3>
+          <p class="text-neutral-600">Машины без опознавательных знаков, униформа без логотипов.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-indigo-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Экологичный подход</h3>
+          <p class="text-neutral-600">Используем биодеградируемые препараты, безопасные для природы.</p>
+        </div>
+      </div>
+      
+      <!-- Важное примечание -->
+      <div class="mt-12 bg-red-50 border border-red-200 p-6 rounded-lg max-w-4xl mx-auto">
+        <div class="flex items-start gap-4">
+          <div class="bg-red-100 p-3 rounded-full flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">P.S. Клопы не исчезнут сами!</h3>
+            <p class="text-neutral-600 mb-2">Колония из 100 особей за месяц выпьет крови, равной 1/3 объема взрослого человека. Не откладывайте обработку!</p>
+            <a href="tel:+73832000082" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              Звоните сейчас: +7 (383) 200-00-82 (круглосуточно)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

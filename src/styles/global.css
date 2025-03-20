@@ -1,9 +1,13 @@
-/* Базовый CSS с использованием Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Дополнительные глобальные стили можно добавить здесь */
+/* Дополнительные глобальные стили */
 body {
-  @apply antialiased text-gray-800;
+  @apply antialiased bg-white text-neutral-800;
+}
+
+/* Скрытие элементов с x-cloak до инициализации Alpine.js */
+[x-cloak] {
+    display: none !important;
 }
