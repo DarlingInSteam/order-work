@@ -1,12 +1,14 @@
 ---
 // Header компонент с навигацией и выпадающими меню
+import logo from '../images/logo.svg';
+import { Image } from 'astro:assets';
 ---
 
 <header class="bg-white shadow sticky top-0 z-50">
     <div class="container mx-auto px-4">
-      <div class="flex items-center h-16">
-        <a href="/" class="font-bold text-indigo-600 py-2">
-          Центр гигиены и экспертизы
+      <div class="flex items-center h-20">
+        <a href="/" class="font-bold text-green-600 py-2">
+          <Image src={logo} alt="Центр гигиены и экспертизы" class="h-14 w-auto" />
         </a>
 
         <div class="md:hidden">
@@ -14,7 +16,7 @@
             type="button" 
             x-data="{}" 
             @click="$store.mobileMenu.toggle()"
-            class="text-gray-700 hover:text-indigo-600 focus:outline-none"
+            class="text-gray-700 hover:text-green-600 focus:outline-none"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -27,13 +29,13 @@
           
 
           <!-- Главная -->
-          <a href="/" class="text-neutral-700 hover:text-indigo-600 py-2">Главная</a>
+          <a href="/" class="text-neutral-700 hover:text-green-600 py-2">Главная</a>
         
           <!-- Насекомые (выпадающее меню) -->
           <div x-data="{ open: false }" @click.away="open = false" class="relative">
             <button 
               @click="open = !open" 
-              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+              class="text-neutral-700 hover:text-green-600 py-2 flex items-center"
             >
               Насекомые
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -65,7 +67,7 @@
           <div x-data="{ open: false }" @click.away="open = false" class="relative">
             <button 
               @click="open = !open" 
-              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+              class="text-neutral-700 hover:text-green-600 py-2 flex items-center"
             >
               Грызуны
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,7 +95,7 @@
           <div x-data="{ open: false }" @click.away="open = false" class="relative">
             <button 
               @click="open = !open" 
-              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+              class="text-neutral-700 hover:text-green-600 py-2 flex items-center"
             >
               Дезинфекция
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -120,7 +122,7 @@
           <div x-data="{ open: false }" @click.away="open = false" class="relative">
             <button 
               @click="open = !open" 
-              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+              class="text-neutral-700 hover:text-green-600 py-2 flex items-center"
             >
               Препараты
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -145,13 +147,13 @@
           </div>
 
           <!-- Цены -->
-          <a href="/prices" class="text-neutral-700 hover:text-indigo-600 py-2">Цены</a>
+          <a href="/prices" class="text-neutral-700 hover:text-green-600 py-2">Цены</a>
           
           <!-- Обратная связь (выпадающее меню) -->
           <div x-data="{ open: false }" @click.away="open = false" class="relative">
             <button 
               @click="open = !open" 
-              class="text-neutral-700 hover:text-indigo-600 py-2 flex items-center"
+              class="text-neutral-700 hover:text-green-600 py-2 flex items-center"
             >
               Обратная связь
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -175,7 +177,7 @@
           </div>
           
           <!-- Заявка онлайн (кнопка) -->
-          <a href="/order" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded">Заявка онлайн</a>
+          <a href="/order" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded">Заявка онлайн</a>
         </nav>
     </div>
   </div>
@@ -285,7 +287,7 @@
       </div>
 
       <div class="pt-2">
-        <a href="/order" class="block py-2 px-4 text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded">Заявка онлайн</a>
+        <a href="/order" class="block py-2 px-4 text-center text-white bg-green-600 hover:bg-green-700 rounded">Заявка онлайн</a>
       </div>
     </nav>
   </div>
