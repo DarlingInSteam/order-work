@@ -1,0 +1,609 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// При необходимости можно добавить изображения комаров
+// import mosquitoImage from '../../images/mosquito.jpg';
+---
+
+<Layout title="Уничтожение комаров в Новосибирске | Центр гигиены и экспертизы">
+  <!-- Hero Section с основной информацией -->
+  <section class="bg-green-600 text-white py-16">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-3/5">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            УНИЧТОЖЕНИЕ КОМАРОВ НА УЧАСТКЕ
+          </h1>
+          <p class="text-xl mb-6">Профессиональная обработка от комаров с гарантией до 2 лет</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="tel:+73832000082" class="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              +7 (383) 200-00-82
+            </a>
+            <a href="#prices" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">Узнать цены</a>
+          </div>
+        </div>
+        <div class="md:w-2/5 mt-8 md:mt-0">
+          <!-- Экстренная помощь карточка -->
+          <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+            <div class="text-center">
+              <div class="inline-block p-3 bg-white/20 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Срочная помощь</h3>
+              <p class="opacity-80">Выезд специалиста в течение 90 минут после звонка в любой район Новосибирска и области</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Чем опасны комары -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Чем опасны комары?</h2>
+      <p class="text-neutral-600 text-lg mb-8 max-w-4xl mx-auto">
+        Комары — не просто неприятные насекомые. Они представляют серьезную угрозу для здоровья:
+      </p>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Переносят опасные заболевания</h3>
+          <p class="text-neutral-600">Являются переносчиками малярии, лихорадки Западного Нила, энцефалита и других опасных инфекций (<a href="https://54.rospotrebnadzor.ru/" class="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">данные Роспотребнадзора, 2023</a>).</p>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Вызывают аллергические реакции</h3>
+          <p class="text-neutral-600">У 25% людей укусы вызывают тяжелую аллергию с отеками, зудом и повышением температуры тела.</p>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Стремительное размножение</h3>
+          <p class="text-neutral-600">Самка откладывает до 300 яиц за цикл. За сезон из одного водоема может вылететь до 3 миллионов комаров.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 5 признаков массового размножения комаров -->
+  <section class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">5 признаков массового размножения комаров</h2>
+      
+      <div class="space-y-6 max-w-4xl mx-auto">
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-green-600">1</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Скопления личинок в стоячей воде</h3>
+            <p class="text-neutral-600">В бочках, лужах и водоемах заметны характерные "запятые" - личинки комаров, которые вскоре превратятся во взрослых особей.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-green-600">2</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Роение возле водоемов</h3>
+            <p class="text-neutral-600">Сразу после заката комары начинают роиться над водой или влажной почвой, образуя заметные скопления.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-green-600">3</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Невозможность находиться на участке без защиты</h3>
+            <p class="text-neutral-600">Если за 5 минут пребывания на участке вы получаете более 10 укусов, это признак серьезного заражения территории.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-green-600">4</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Комары активны даже днем</h3>
+            <p class="text-neutral-600">В норме комары активны в сумерках, но при массовом размножении они атакуют круглосуточно.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 rounded-full p-3 flex-shrink-0">
+            <span class="font-bold text-green-600">5</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Большое количество комаров в затененных зонах</h3>
+            <p class="text-neutral-600">Днем комары скрываются под листвой кустарников, в высокой траве и затененных местах, откуда вылетают при появлении людей.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Почему домашние средства неэффективны -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-8 text-center">Почему домашние средства неэффективны?</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-100 p-3 rounded-full flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Дымовые спирали отпугивают лишь местно</h3>
+              <p class="text-neutral-600">Эффективны только в радиусе 1-2 метров и работают максимум 4 часа, не влияя на места размножения комаров.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-100 p-3 rounded-full flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Ультразвуковые отпугиватели бесполезны</h3>
+              <p class="text-neutral-600">Научные исследования доказали их неэффективность — комары не реагируют на ультразвук.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-100 p-3 rounded-full flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Бытовые инсектициды кратковременны</h3>
+              <p class="text-neutral-600">Действуют максимум 2-3 дня и не защищают от новых особей, постоянно прилетающих с соседних территорий.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="bg-orange-100 p-3 rounded-full flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Пример из практики</h3>
+              <p class="text-neutral-600">Клиент потратил 12 000 рублей на ловушки для комаров, но смог уничтожить менее 5% популяции, так как не были обработаны места размножения насекомых.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Наша технология уничтожения -->
+  <section class="py-16 bg-green-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Наша технология уничтожения комаров</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 w-14 h-14 flex items-center justify-center rounded-full mb-4">
+            <span class="text-2xl font-bold text-green-600">1</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Экспертный анализ участка</h3>
+          <ul class="space-y-2 text-neutral-600">
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Выявление мест размножения комаров (водоемы, влажные зоны)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Определение мест дневного отдыха комаров</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Оценка плотности популяции и видов комаров</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 w-14 h-14 flex items-center justify-center rounded-full mb-4">
+            <span class="text-2xl font-bold text-green-600">2</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">3 метода обработки на выбор</h3>
+          <ul class="space-y-2 text-neutral-600">
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span><strong>Барьерная защита</strong> — создание невидимого защитного барьера на растениях (до 40 дней)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span><strong>Холодный туман</strong> — мелкодисперсная обработка с проникновением в труднодоступные места</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span><strong>Ларвицидная обработка</strong> — уничтожение личинок в водоемах (до 2 месяцев)</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 w-14 h-14 flex items-center justify-center rounded-full mb-4">
+            <span class="text-2xl font-bold text-green-600">3</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Используем препараты 4-го поколения</h3>
+          <ul class="space-y-2 text-neutral-600">
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Безопасны для пчел и домашних животных (сертификат ECOCERT)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Устойчивы к осадкам и УФ-излучению (срок защиты до 40 дней)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Одобрены Роспотребнадзором (№ РУ.77.99.36.002.Е.005683.08.22)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Подготовка участка -->
+      <div class="bg-white p-6 rounded-lg shadow-sm max-w-4xl mx-auto">
+        <h3 class="text-xl font-semibold mb-4 text-center">Подготовка участка</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <div class="bg-green-100 rounded-full p-2 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <p class="text-neutral-600">Освободите водоемы от лишней растительности.</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="bg-green-100 rounded-full p-2 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <p class="text-neutral-600">Изолируйте домашних животных на 2-3 часа.</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="bg-green-100 rounded-full p-2 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <p class="text-neutral-600">Уберите детские игрушки с участка.</p>
+          </li>
+        </ul>
+        <div class="mt-4 bg-green-100 p-4 rounded-lg">
+          <p class="font-semibold text-green-800">Важно: Вернуться на участок можно через 1 час после обработки!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Цены на услуги -->
+  <section id="prices" class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Цены на уничтожение комаров</h2>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full text-left">
+          <thead>
+            <tr class="bg-green-50">
+              <th class="px-4 py-3 font-semibold">Площадь участка / Удаленность</th>
+              <th class="px-4 py-3 font-semibold">0-30 км</th>
+              <th class="px-4 py-3 font-semibold">31-50 км</th>
+              <th class="px-4 py-3 font-semibold">51-70 км</th>
+              <th class="px-4 py-3 font-semibold">71-90 км</th>
+              <th class="px-4 py-3 font-semibold">Свыше 90 км</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y">
+            <tr class="hover:bg-neutral-50">
+              <td class="px-4 py-3">Участок до 10 соток</td>
+              <td class="px-4 py-3 font-semibold">2500 ₽</td>
+              <td class="px-4 py-3 font-semibold">3000 ₽</td>
+              <td class="px-4 py-3 font-semibold">4000 ₽</td>
+              <td class="px-4 py-3 font-semibold">5000 ₽</td>
+              <td class="px-4 py-3 font-semibold">-</td>
+            </tr>
+            <tr class="hover:bg-neutral-50">
+              <td class="px-4 py-3">Участок от 11 до 20 соток</td>
+              <td class="px-4 py-3 font-semibold">3000 ₽</td>
+              <td class="px-4 py-3 font-semibold">3500 ₽</td>
+              <td class="px-4 py-3 font-semibold">4500 ₽</td>
+              <td class="px-4 py-3 font-semibold">5500 ₽</td>
+              <td class="px-4 py-3 font-semibold">-</td>
+            </tr>
+            <tr class="hover:bg-neutral-50">
+              <td class="px-4 py-3">Участок от 21 до 40 соток</td>
+              <td class="px-4 py-3 font-semibold">3500 ₽</td>
+              <td class="px-4 py-3 font-semibold">4000 ₽</td>
+              <td class="px-4 py-3 font-semibold">5000 ₽</td>
+              <td class="px-4 py-3 font-semibold">6000 ₽</td>
+              <td class="px-4 py-3 font-semibold">Индивидуально</td>
+            </tr>
+            <tr class="hover:bg-neutral-50">
+              <td class="px-4 py-3">Участок от 41 до 50 соток</td>
+              <td class="px-4 py-3 font-semibold">4000 ₽</td>
+              <td class="px-4 py-3 font-semibold">4500 ₽</td>
+              <td class="px-4 py-3 font-semibold">6000 ₽</td>
+              <td class="px-4 py-3 font-semibold">6500 ₽</td>
+              <td class="px-4 py-3 font-semibold">-</td>
+            </tr>
+            <tr class="hover:bg-neutral-50">
+              <td class="px-4 py-3">Участок от 51 до 1000 соток</td>
+              <td class="px-4 py-3 font-semibold" colspan="5">Оговаривается индивидуально</td>
+            </tr>
+            <tr class="hover:bg-neutral-50">
+              <td class="px-4 py-3">1 Га и более</td>
+              <td class="px-4 py-3 font-semibold">От 8000 ₽</td>
+              <td class="px-4 py-3 font-semibold" colspan="4">Оговаривается индивидуально</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Акция -->
+      <div class="mt-8 bg-yellow-50 border border-yellow-200 p-6 rounded-lg">
+        <div class="flex items-center gap-4">
+          <div class="bg-yellow-100 p-3 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13h-8m0 0h16" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Акция: При заказе обработки от комаров — обработка от клещей со скидкой 30%!</h3>
+            <p class="text-neutral-600 mt-1">Комплексная защита участка от опасных насекомых по выгодной цене.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Наши гарантии -->
+  <section class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Наши гарантии</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">До 30 дней защиты</h3>
+          <p class="text-neutral-600">Гарантированное снижение численности комаров на 85-95% в течение 30 дней.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Бесплатный повторный выезд</h3>
+          <p class="text-neutral-600">Если эффективность обработки менее 85%, проведем повторную обработку бесплатно.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0 0c-1.657 0-3-.895-3-2s1.343-2 3-2 3-.895 3-2-1.343-2-3-2m0 0V3m0 18V15" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Сезонная профилактика</h3>
+              <p class="text-neutral-600">Обработка каждый сезон защищает ваш участок от прилета новых особей с соседних территорий.</p>
+            </div>
+          </div>
+          
+          <!-- Статистика -->
+          <div class="bg-white p-6 rounded-lg shadow-sm max-w-3xl mx-auto">
+            <div class="flex items-start gap-4">
+              <div class="bg-green-100 p-3 rounded-full flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Статистика:</h3>
+                <p class="text-neutral-600">В 2023 году из 2 450 обработок дачных участков повторные выезды потребовались только в 1.2% случаев (причина — появление новых водоемов на участке).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 3 шага для заказа -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+          <h2 class="text-3xl font-bold mb-12 text-center">Как заказать обработку от комаров</h2>
+          
+          <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="bg-neutral-50 p-6 rounded-lg text-center">
+              <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl font-bold text-white">1</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-4">Звонок</h3>
+              <p class="text-neutral-600 mb-4">Позвоните по номеру <a href="tel:+73832000082" class="text-green-600 font-semibold">+7 (383) 200-00-82</a> — оператор задаст вопросы:</p>
+              <ul class="text-left space-y-2">
+                <li class="flex items-start gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Площадь участка и наличие водоемов</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Удаленность от города</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Желаемую дату и время обработки</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-neutral-50 p-6 rounded-lg text-center">
+              <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl font-bold text-white">2</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-4">Подготовка и обработка</h3>
+              <div class="flex flex-col items-center gap-4 mb-4">
+                <div class="bg-green-100 p-3 rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                  </svg>
+                </div>
+                <p class="font-semibold">Выезд в удобное время</p>
+              </div>
+              <p class="text-neutral-600">Специалист проводит обработку после вашей подготовки участка согласно инструкции.</p>
+            </div>
+            
+            <div class="bg-neutral-50 p-6 rounded-lg text-center">
+              <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl font-bold text-white">3</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-4">Оплата по факту</h3>
+              <div class="flex flex-col items-center gap-4 mb-4">
+                <div class="bg-green-100 p-3 rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p class="font-semibold">После проверки результата</p>
+              </div>
+              <p class="text-neutral-600">Вы оплачиваете услугу только после выполненной работы, удобным для вас способом.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 4 причины выбрать нас -->
+      <section class="py-16 bg-neutral-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+          <h2 class="text-3xl font-bold mb-12 text-center">4 причины выбрать нас</h2>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Лицензия Роспотребнадзора</h3>
+              <p class="text-neutral-600">№ ЛО-54-01 0033387 на профессиональную дезинсекцию.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">17 лет опыта</h3>
+              <p class="text-neutral-600">Обработано более 8 000 участков в Новосибирской области.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Экстренный выезд</h3>
+              <p class="text-neutral-600">Приезжаем через 90 минут после звонка в любую точку Новосибирска и области.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Экологичный подход</h3>
+              <p class="text-neutral-600">Используем препараты, безопасные для растений, пчел и домашних животных.</p>
+            </div>
+          </div>
+          
+          <!-- Важное примечание -->
+          <div class="mt-12 bg-red-50 border border-red-200 p-6 rounded-lg max-w-4xl mx-auto">
+            <div class="flex items-start gap-4">
+              <div class="bg-red-100 p-3 rounded-full flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">P.S. Знаете ли вы?</h3>
+                <p class="text-neutral-600 mb-2">Комары находят человека по запаху углекислого газа на расстоянии до 50 метров. Не позволяйте им испортить ваш отдых на природе!</p>
+                <a href="tel:+73832000082" class="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  Звоните сейчас: +7 (383) 200-00-82 — избавьтесь от комаров за 1 день!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
