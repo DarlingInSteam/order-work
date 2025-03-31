@@ -1,0 +1,330 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// Import images if needed
+// import mapImage from '../images/map.jpg';
+---
+
+<Layout title="Контакты | Центр гигиены и экспертизы в Новосибирске">
+  <!-- Hero Section -->
+  <section class="bg-green-600 text-white py-16">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-3/5">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            КОНТАКТНАЯ ИНФОРМАЦИЯ
+          </h1>
+          <p class="text-xl mb-6">Центр гигиены и экспертизы в Новосибирске</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="tel:+73832000082" class="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              +7 (383) 200-00-82
+            </a>
+            <a href="#contact-form" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+              Написать сообщение
+            </a>
+          </div>
+        </div>
+        <div class="md:w-2/5 mt-8 md:mt-0">
+          <!-- Экстренная помощь карточка -->
+          <div class="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
+            <div class="text-center">
+              <div class="inline-block p-3 bg-white/20 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Срочная помощь</h3>
+              <p class="opacity-80">Выезд специалиста через 30-60 минут после звонка в любой район Новосибирска</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Основная контактная информация -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Наши контакты</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm text-center">
+          <div class="bg-green-100 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Телефон</h3>
+          <p class="text-neutral-600 mb-2">Круглосуточно, без выходных</p>
+          <a href="tel:+73832000082" class="text-xl font-bold text-green-600 hover:underline block">+7 (383) 200-00-82</a>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm text-center">
+          <div class="bg-green-100 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Адрес</h3>
+          <p class="text-neutral-600 mb-2">Пн-Пт: 9:00 - 19:00</p>
+          <p class="text-neutral-600 mb-4">Сб: 10:00 - 17:00</p>
+          <p class="font-medium">г. Новосибирск, ул. Фрунзе, 80 офис 305</p>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm text-center">
+          <div class="bg-green-100 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Email</h3>
+          <p class="text-neutral-600 mb-2">Ответ в течение 2 часов</p>
+          <a href="mailto:info@eco-control.ru" class="text-green-600 font-medium hover:underline">info@eco-control.ru</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Карта -->
+  <section class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-8 text-center">Мы на карте</h2>
+      <p class="text-lg text-neutral-600 mb-8 text-center max-w-3xl mx-auto">
+        Наш офис расположен в центре Новосибирска, вы легко можете добраться до нас на общественном или личном транспорте
+      </p>
+      
+      <div class="bg-white p-4 rounded-lg shadow-sm">
+        <!-- Iframe с картой Яндекс или Google -->
+        <div class="w-full h-[450px] rounded-lg overflow-hidden">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.7642553788246!2d82.94045437682247!3d55.02921677938097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5da361b2d0d%3A0xf1d739ae73025a50!2z0YPQuy4g0KTRgNGD0L3Qt9C1LCA4MCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDAw!5e0!3m2!1sru!2sru!4v1698153333018!5m2!1sru!2sru" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма для связи -->
+  <section id="contact-form" class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h2 class="text-3xl font-bold mb-8 text-center">Напишите нам</h2>
+      <p class="text-lg text-neutral-600 mb-8 text-center">
+        Есть вопросы или нужна консультация? Заполните форму, и мы свяжемся с вами в течение часа
+      </p>
+      
+      <div class="bg-neutral-50 p-8 rounded-lg shadow-sm">
+        <form class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block mb-2 font-medium" for="name">Ваше имя*</label>
+              <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="Иван Иванов" required>
+            </div>
+            <div>
+              <label class="block mb-2 font-medium" for="phone">Телефон*</label>
+              <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="+7 (___) ___-__-__" required>
+            </div>
+          </div>
+          
+          <div>
+            <label class="block mb-2 font-medium" for="email">Email</label>
+            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="example@mail.ru">
+          </div>
+          
+          <div>
+            <label class="block mb-2 font-medium" for="subject">Тема обращения*</label>
+            <select id="subject" class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-green-600" required>
+              <option value="" selected disabled>Выберите тему обращения</option>
+              <option value="insects">Уничтожение насекомых</option>
+              <option value="rodents">Уничтожение грызунов</option>
+              <option value="disinfection">Дезинфекция</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          
+          <div>
+            <label class="block mb-2 font-medium" for="message">Сообщение*</label>
+            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="Опишите ваш вопрос или проблему" required></textarea>
+          </div>
+          
+          <div class="flex items-start">
+            <input type="checkbox" id="agreement" class="mt-1" required>
+            <label for="agreement" class="ml-2 text-sm text-neutral-600">
+              Я согласен на обработку персональных данных в соответствии с <a href="/privacy-policy" class="text-green-600 hover:underline">политикой конфиденциальности</a>
+            </label>
+          </div>
+          
+          <div>
+            <button type="submit" class="w-full bg-green-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-green-700 transition-colors">
+              Отправить сообщение
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Наша лицензия и сертификаты -->
+  <section class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-8 text-center">Наши лицензии и сертификаты</h2>
+      <p class="text-lg text-neutral-600 mb-12 text-center max-w-3xl mx-auto">
+        Мы работаем официально и имеем все необходимые документы для проведения работ
+      </p>
+      
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+          <div class="bg-neutral-100 p-4 rounded-lg flex items-center justify-center h-40 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-600 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold">Лицензия Минздрава</h3>
+          <p class="text-sm text-neutral-600">№ ЛО-54-01 0033387</p>
+        </div>
+        
+        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+          <div class="bg-neutral-100 p-4 rounded-lg flex items-center justify-center h-40 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-600 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold">Сертификат СЭС</h3>
+          <p class="text-sm text-neutral-600">Соответствие санитарным нормам</p>
+        </div>
+        
+        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+          <div class="bg-neutral-100 p-4 rounded-lg flex items-center justify-center h-40 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-600 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold">ISO 9001:2015</h3>
+          <p class="text-sm text-neutral-600">Система менеджмента качества</p>
+        </div>
+        
+        <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+          <div class="bg-neutral-100 p-4 rounded-lg flex items-center justify-center h-40 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-600 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold">Свидетельство НИИ</h3>
+          <p class="text-sm text-neutral-600">Эффективность методик</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Заключительный призыв к действию -->
+  <section class="py-16 bg-green-600 text-white">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <h2 class="text-3xl font-bold mb-6">Нужна помощь прямо сейчас?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        Звоните в любое время суток! Мы работаем 24/7, без выходных и праздников.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="tel:+73832000082" class="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-colors flex items-center justify-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          +7 (383) 200-00-82
+        </a>
+        <a href="#contact-form" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+          </svg>
+          Написать сообщение
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ - Часто задаваемые вопросы -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Часто задаваемые вопросы</h2>
+      
+      <div class="space-y-4" id="faq-accordion">
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <button class="accordion-btn flex justify-between items-center w-full text-left">
+            <h3 class="font-semibold text-lg">Как быстро вы сможете приехать?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content mt-4 hidden">
+            <p class="text-neutral-600">В экстренных случаях специалист приедет в течение 30-60 минут после звонка. При плановой обработке — в любое удобное для вас время в рамках рабочего дня.</p>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <button class="accordion-btn flex justify-between items-center w-full text-left">
+            <h3 class="font-semibold text-lg">Работаете ли вы в выходные и праздничные дни?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content mt-4 hidden">
+            <p class="text-neutral-600">Да, мы работаем круглосуточно и без выходных. В выходные и праздники вы можете вызвать специалиста в любое удобное для вас время.</p>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <button class="accordion-btn flex justify-between items-center w-full text-left">
+            <h3 class="font-semibold text-lg">Как оплатить услуги?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content mt-4 hidden">
+            <p class="text-neutral-600">Вы можете оплатить услуги наличными, банковской картой или безналичным переводом. Для юридических лиц предоставляем полный комплект документов.</p>
+          </div>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <button class="accordion-btn flex justify-between items-center w-full text-left">
+            <h3 class="font-semibold text-lg">Есть ли у вас скидки на услуги?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="accordion-content mt-4 hidden">
+            <p class="text-neutral-600">Да, мы предоставляем скидки при заключении договора на длительное обслуживание, а также проводим регулярные акции. Актуальные предложения можно узнать у наших операторов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Add event listeners to accordion buttons when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const accordionBtns = document.querySelectorAll('.accordion-btn');
+      
+      accordionBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          // Toggle active class on the button
+          btn.classList.toggle('active');
+          
+          // Toggle the rotation of the arrow icon
+          const icon = btn.querySelector('svg');
+          if (icon) {
+            icon.classList.toggle('rotate-180');
+          }
+          
+          // Toggle visibility of the content
+          const content = btn.nextElementSibling;
+          if (content && content.classList.contains('accordion-content')) {
+            content.classList.toggle('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</Layout>

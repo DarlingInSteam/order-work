@@ -1,0 +1,577 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// При необходимости можно добавить изображения 
+// import rodentImage from '../../images/rodent-blocks.jpg';
+---
+
+<Layout title="Парафиновые брикеты - эффективное средство от грызунов | Центр гигиены и экспертизы">
+  <!-- Hero Section с основной информацией о продукте -->
+  <section class="bg-green-600 text-white py-16">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-3/5">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            СРЕДСТВО ОТ ГРЫЗУНОВ
+          </h1>
+          <p class="text-xl mb-6">Парафиновые брикеты для эффективного уничтожения крыс и мышей</p>
+          <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg mb-6">
+            <div class="flex flex-wrap items-center gap-4">
+              <div class="bg-white/20 rounded-full px-4 py-2">
+                <span class="text-lg font-semibold">10 шт. - 350 ₽</span>
+              </div>
+              <div class="bg-white/20 rounded-full px-4 py-2">
+                <span class="text-lg font-semibold">20 шт. - 600 ₽</span>
+              </div>
+              <div class="bg-white/20 rounded-full px-4 py-2">
+                <span class="text-lg font-semibold">Срок хранения: 3 месяца</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <a href="tel:+73832000082" class="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              +7 (383) 200-00-82
+            </a>
+            <a href="#application" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">Как применять</a>
+          </div>
+        </div>
+        <div class="md:w-2/5 mt-8 md:mt-0">
+          <!-- Карточка продукта -->
+          <div class="bg-white text-neutral-800 rounded-lg shadow-lg overflow-hidden">
+            <div class="p-6 bg-gradient-to-br from-green-50 to-white">
+              <div class="w-40 h-40 mx-auto mb-4 bg-white rounded-full shadow-inner flex items-center justify-center border-4 border-green-100">
+                <!-- Placeholder for product image -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h2 class="text-2xl font-bold text-center text-green-800 mb-2">Парафиновые брикеты</h2>
+              <p class="text-neutral-600 text-center mb-4">Эффективное родентицидное средство для борьбы с грызунами</p>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <div>
+                  <span class="text-xl font-bold text-green-600">350 ₽</span>
+                  <span class="text-sm text-neutral-500"> - 10 шт.</span>
+                </div>
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">В наличии</span>
+              </div>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Уничтожает крыс и мышей</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Содержит аттрактант</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Для сухих и влажных помещений</span>
+                </li>
+              </ul>
+              <a href="tel:+73832000082" class="block w-full bg-green-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                Заказать обработку
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Информация о продукте -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Эффективное средство от грызунов</h2>
+      
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <p class="text-lg text-neutral-700 mb-6">
+            <span class="font-semibold text-green-700">Парафиновые брикеты</span> – это готовая к применению приманка для уничтожения грызунов в виде твердых блоков. Благодаря содержанию парафина, средство устойчиво к воздействию влаги и может использоваться в помещениях с повышенной влажностью.
+          </p>
+          <ul class="space-y-4 mb-6">
+            <li class="flex items-start gap-3">
+              <div class="bg-green-100 p-2 rounded-full flex-shrink-0 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <span>
+                <strong class="text-neutral-800">Состав:</strong> крупа злаковых культур, родентицидное средство ратикум-гель, парафин П-2, пищевой краситель, аттрактант
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="bg-green-100 p-2 rounded-full flex-shrink-0 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <span>
+                <strong class="text-neutral-800">Действующее вещество:</strong> ратикум-гель, эффективный антикоагулянт, вызывающий гибель грызунов
+              </span>
+            </li>
+          </ul>
+          <p class="text-lg text-neutral-700">
+            Парафиновые брикеты содержат специальные пищевые привлекатели (аттрактанты), которые делают приманку особенно привлекательной для грызунов. Средство эффективно против различных видов грызунов, включая крыс и мышей, даже при наличии альтернативных источников питания.
+          </p>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Преимущества продукта:</h3>
+          <div class="grid grid-cols-1 gap-4 mb-6">
+            <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
+              <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span class="font-medium">Высокая эффективность против крыс и мышей</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
+              <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span class="font-medium">Устойчивость к влаге и плесени</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
+              <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span class="font-medium">Содержит привлекатель для грызунов</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
+              <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span class="font-medium">Удобная форма для размещения</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
+              <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span class="font-medium">Подходит для различных типов помещений</span>
+            </div>
+          </div>
+          
+          <div class="mt-6 bg-green-50 p-4 rounded-lg border-l-4 border-green-600">
+            <h3 class="font-semibold text-green-800 mb-2">Области применения:</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Жилые помещения и квартиры</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Пищевые, лечебные и детские учреждения</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Подвалы, погреба и канализационные сети</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Склады и производственные помещения</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Применение средства -->
+  <section id="application" class="py-16 bg-neutral-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Как использовать парафиновые брикеты</h2>
+      
+      <div class="grid md:grid-cols-2 gap-10 mb-12">
+        <div>
+          <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+            <h3 class="text-xl font-semibold mb-4">Инструкция по применению</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <div class="bg-yellow-100 rounded-full p-2 flex-shrink-0 mt-1">
+                  <span class="font-bold text-yellow-700">1</span>
+                </div>
+                <p class="text-neutral-700">Разложите брикеты на подложках по периметру помещения в местах, недоступных для детей и домашних животных.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="bg-yellow-100 rounded-full p-2 flex-shrink-0 mt-1">
+                  <span class="font-bold text-yellow-700">2</span>
+                </div>
+                <p class="text-neutral-700">Размещайте приманку из расчета 1 брикет на 10-15 м², но не менее 1 брикета на помещение.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="bg-yellow-100 rounded-full p-2 flex-shrink-0 mt-1">
+                  <span class="font-bold text-yellow-700">3</span>
+                </div>
+                <p class="text-neutral-700">Разместите брикеты вдоль стен, перегородок, в углах помещений, вблизи нор и путей перемещения грызунов.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="bg-yellow-100 rounded-full p-2 flex-shrink-0 mt-1">
+                  <span class="font-bold text-yellow-700">4</span>
+                </div>
+                <p class="text-neutral-700">Проверяйте приманку регулярно. При обнаружении погрызенных или исчезнувших брикетов, заменяйте их новыми.</p>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold mb-4">Меры предосторожности</h3>
+            <div class="bg-red-50 p-4 rounded-lg mb-4">
+              <p class="flex items-start gap-2 text-red-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <span>Размещайте брикеты в местах, недоступных для детей и домашних животных.</span>
+              </p>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <div class="bg-red-100 p-2 rounded-full flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p class="text-neutral-700">При работе с приманкой используйте защитные средства: резиновые перчатки, халат, шапочку.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="bg-red-100 p-2 rounded-full flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p class="text-neutral-700">После работы тщательно вымойте руки и лицо с мылом.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="bg-red-100 p-2 rounded-full flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p class="text-neutral-700">При работе соблюдайте правила личной гигиены, не курите, не принимайте пищу.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div>
+          <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+            <h3 class="text-xl font-semibold mb-4">Рекомендуемые места размещения</h3>
+            <div class="grid grid-cols-1 gap-4">
+              <div class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Вдоль стен и плинтусов</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>В углах помещений</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Вблизи нор и отверстий</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>За мебелью и бытовой техникой</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>В подвалах, технических помещениях</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Рядом с мусоропроводами и мусорными контейнерами</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-green-50 p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold mb-4">Советы по эффективному применению:</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <div class="bg-green-100 p-2 rounded-full flex-shrink-0 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p class="text-neutral-700">Для повышения эффективности перед раскладкой приманки проведите дератизационное обследование, чтобы определить места обитания грызунов.</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="bg-green-100 p-2 rounded-full flex-shrink-0 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p class="text-neutral-700">Размещайте приманку вблизи следов жизнедеятельности грызунов (помет, погрызы, следы лап).</p>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="bg-green-100 p-2 rounded-full flex-shrink-0 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p class="text-neutral-700">При большой популяции грызунов увеличьте количество расставляемых брикетов и проверяйте их чаще.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Информация о грызунах -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Почему важна борьба с грызунами</h2>
+      
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Опасности, связанные с грызунами</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <div class="bg-red-100 p-2 rounded-full flex-shrink-0 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-neutral-700"><strong>Распространение инфекций</strong> – грызуны являются переносчиками многих опасных заболеваний, включая лептоспироз, сальмонеллез, чуму, геморрагическую лихорадку и другие.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="bg-red-100 p-2 rounded-full flex-shrink-0 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-neutral-700"><strong>Порча имущества</strong> – крысы и мыши повреждают мебель, обои, проводку, изоляцию, что может привести к коротким замыканиям и пожарам.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="bg-red-100 p-2 rounded-full flex-shrink-0 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-neutral-700"><strong>Загрязнение продуктов</strong> – грызуны портят и загрязняют пищевые продукты, делая их опасными для употребления.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="bg-red-100 p-2 rounded-full flex-shrink-0 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div>
+                <p class="text-neutral-700"><strong>Причинение вреда здоровью</strong> – в некоторых случаях крысы могут нападать на людей, особенно на маленьких детей, оставленных без присмотра.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-4">Признаки присутствия грызунов</h3>
+                  <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                      <div class="bg-yellow-100 p-2 rounded-full flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="text-neutral-700"><strong>Следы и помет</strong> – небольшие темные гранулы помета, следы лап и хвоста на пыльных поверхностях или в муке, рассыпанной на пол.</p>
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <div class="bg-yellow-100 p-2 rounded-full flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="text-neutral-700"><strong>Шум и шорохи</strong> – характерные звуки перемещения, писк или шуршание, особенно заметные в ночное время, когда грызуны наиболее активны.</p>
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <div class="bg-yellow-100 p-2 rounded-full flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="text-neutral-700"><strong>Погрызы и повреждения</strong> – следы зубов на упаковках продуктов, мебели, проводах, дверях, пластиковых трубах и деревянных элементах.</p>
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <div class="bg-yellow-100 p-2 rounded-full flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="text-neutral-700"><strong>Норы и гнезда</strong> – отверстия диаметром от 2 до 10 см (в зависимости от вида грызуна) в стенах, полу, под мебелью, а также скопления материалов для обустройства гнезд.</p>
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <div class="bg-yellow-100 p-2 rounded-full flex-shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="text-neutral-700"><strong>Характерный запах</strong> – специфический затхлый запах, особенно заметный в местах скопления грызунов или их туалетов.</p>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                  <div class="mt-6 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+                    <h4 class="font-semibold text-yellow-800 mb-2">Обратите внимание!</h4>
+                    <p class="text-neutral-700">
+                      При обнаружении признаков присутствия грызунов важно действовать быстро. Каждая пара крыс может произвести до 1500 потомков в год, что приводит к быстрому росту популяции и усложнению борьбы с ними.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <!-- Профессиональная обработка -->
+          <section class="py-16 bg-green-600 text-white">
+            <div class="container mx-auto px-4 max-w-6xl">
+              <h2 class="text-3xl font-bold mb-8 text-center">Доверьте обработку профессионалам</h2>
+              <p class="text-xl mb-12 text-center max-w-4xl mx-auto">
+                Хотя парафиновые брикеты можно применять самостоятельно, профессиональная дератизация гарантирует комплексное решение проблемы и полное уничтожение грызунов
+              </p>
+              
+              <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                  <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-3 text-center">Комплексное обследование</h3>
+                  <p class="text-center">
+                    Выявление всех мест обитания грызунов, путей их перемещения и определение масштаба заражения
+                  </p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                  <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-3 text-center">Индивидуальный подход</h3>
+                  <p class="text-center">
+                    Подбор оптимальных средств и методов борьбы с учетом особенностей помещения и жизненного цикла грызунов
+                  </p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                  <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-3 text-center">Гарантированный результат</h3>
+                  <p class="text-center">
+                    Проведение контрольных мероприятий и дополнительных обработок для обеспечения полного уничтожения грызунов
+                  </p>
+                </div>
+              </div>
+              
+              <div class="mt-12 flex justify-center">
+                <a href="tel:+73832000082" class="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  Заказать профессиональную дератизацию: +7 (383) 200-00-82
+                </a>
+              </div>
+            </div>
+          </section>
+        
+          <!-- О компании -->
+          <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-6xl">
+              <div class="bg-neutral-50 p-6 rounded-lg shadow-sm max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                  <div class="md:w-1/3 flex justify-center">
+                    <div class="w-32 h-32 rounded-full bg-green-100 flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="md:w-2/3">
+                    <h3 class="text-xl font-semibold mb-3">О компании</h3>
+                    <p class="text-neutral-700 mb-3">
+                      ООО «Центр гигиены и экспертизы» создан в 2006 году. Имеет лицензию на осуществление медицинской деятельности № ЛО-54-01 0033387 по дезинфектологии.
+                    </p>
+                    <p class="text-neutral-700">
+                      Обратившись к нам, вы делаете правильный выбор! Мы обеспечиваем эффективную борьбу с грызунами, используя только профессиональные средства и современные методы.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="mt-6 pt-6 border-t border-green-100">
+                  <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="flex items-center gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>Работаем без выходных с 8:00 до 20:00</span>
+                    </div>
+                    <div class="flex gap-4">
+                      <a href="tel:+73832000082" class="text-green-600 font-semibold hover:underline">+7 (383) 200-00-82</a>
+                      <a href="tel:+73832000084" class="text-green-600 font-semibold hover:underline">+7 (383) 200-00-84</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </Layout>
